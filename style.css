@@ -1,0 +1,101 @@
+header {
+    color: blue;
+    background-color: fuchsia;
+    width: 95%;
+    height: 80%;
+    text-align: center;
+}
+
+nav {
+    background-color: chartreuse;
+    width: 95%;
+    height: 80%;
+}
+
+section {
+    width: 95%;
+    height: 80%;
+    padding: 20px;
+    background-color: aqua;
+}
+
+h2 {
+    color:blueviolet;
+    text-align: center;
+    font-family: fantasy ;
+}
+
+p {
+    text-align:start;
+    color:crimson;
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a::before {
+    content: "\025b6";
+}
+
+input[type=text] {
+    background-color: chocolate;
+    color: chartreuse;
+    font-family: cursive;
+}
+input[type=number] {
+    background-color: darkgreen;
+    color: aqua;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-family:fantasy;
+    background-color:  chartreuse;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+*::selection{
+    color: aquamarine;
+    background-color: black;
+}
+#lef {
+    width: 40%;
+    height: 200%;
+    background-color:darkcyan;
+}
+
+@media print {
+    .screen-only {
+        display: none;
+    }
+}
+
+@media(min-width: 600px) {
+    body {
+        background-color: brown;
+    }
+    h1::before {
+        content: "Welcome! This is My Web Page";
+    }
+    video{
+        margin-left: 30%;
+    }
+
+}
+
+@media(max-width:599px) {
+    body {
+        background-color:blue;
+    }
+    h1::before {
+        content: "Welcome!!";
+    }
+}
